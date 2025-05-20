@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantas Urbano</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plantas Urbano</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Plantas Urbano</h2>
+            <p>Descubre nuestra variedad de plantas, flores y árboles para embellecer tu espacio.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Video de nuestro vivero" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="productos" class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Planta 1">
+                    <h3>Planta 1</h3>
+                    <p>Descripción breve de la planta.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Planta 2">
+                    <h3>Planta 2</h3>
+                    <p>Descripción breve de la planta.</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="Planta 3">
+                    <h3>Planta 3</h3>
+                    <p>Descripción breve de la planta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas" class="reseñas">
+            <h2>Reseñas de nuestros clientes</h2>
+            <div class="grid-reseñas">
+                <div class="reseña">
+                    <p>"Excelente calidad y atención."</p>
+                    <strong>- Cliente A</strong>
+                </div>
+                <div class="reseña">
+                    <p>"Gran variedad de plantas, muy recomendados."</p>
+                    <strong>- Cliente B</strong>
+                </div>
+                <div class="reseña">
+                    <p>"Mis plantas llegaron en perfecto estado."</p>
+                    <strong>- Cliente C</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/xldbvaon" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plantas Urbano. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
