@@ -1,4 +1,4 @@
-# Vivero Verde Vida
+# Vivero Plantas Urbano
 
 Este sitio web es un proyecto educativo para representar un vivero ficticio llamado "Vivero Verde Vida".
 
