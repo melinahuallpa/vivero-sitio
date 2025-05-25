@@ -1,88 +1,296 @@
-/* General */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f9fdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header y Navegación === */
+
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+  background: linear-gradient(to right, #2e7d32, #102b11 );
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: background 0.3s;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
 }
 
-/* Sección Productos con Flexbox */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* === Imagen destacada con link a tienda === */
+
+.banner-tienda {
+  margin-top: 0;
+  text-align: center;
+}
+
+.banner-tienda img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Bienvenida === */
+
+.bienvenida {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f1f8f4;
+}
+
+.bienvenida p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* === Sección de Productos === */
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 300px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f8f4;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  width: 280px;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
-/* Sección Reseñas con Grid */
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+}
+
+.card h3 {
+  color: #2e7d32;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* === Reseñas === */
+
+.reseñas {
+  background-color: #e8f5e9;
+  padding: 2rem;
+}
+
 .grid-reseñas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-/* Sección Contacto - Responsive con Media Queries */
-.contacto form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
+.reseña {
+  background-color: white;
+  border-left: 4px solid #66bb6a;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 
-.contacto input, .contacto textarea, .contacto button {
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 16px;
+/* === Video === */
+
+.video {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f8f4;
 }
+
+.video video {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* === Contacto === */
+
+.contacto {
+  padding: 2rem;
+  background-color: #e8f5e9;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #c8e6c9;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* === Footer === */
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  font-size: 0.9rem;
+  padding: 1rem 2rem 0.5rem;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-mapa,
+.footer-redes {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-mapa h4,
+.footer-redes h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.iconos-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.iconos-redes a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.iconos-redes a:hover {
+  color: #c8e6c9;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* === Responsive === */
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  .banner-tienda img {
+    max-height: 250px;
+  }
 }
 
-/* Background personalizado */
-#inicio {
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://via.placeholder.com/1200x400');
-    background-size: cover;
-    background-position: center;
-    padding: 50px 20px;
+@media (max-width: 480px) {
+  .footer-contenido {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .footer-redes {
+    align-items: center;
+  }
+
+  .iconos-redes {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .grid-reseñas {
+    grid-template-columns: 1fr;
+  }
 }

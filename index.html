@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantas Urbano</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Plantas Urbano</h1>
@@ -15,57 +19,77 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#video">Video</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Bienvenidos a Plantas Urbano</h2>
-            <p>Descubre nuestra variedad de plantas, flores y árboles para embellecer tu espacio.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Video de nuestro vivero" frameborder="0" allowfullscreen></iframe>
+        <!-- Imagen destacada con link a tienda -->
+        <section class="banner-tienda" id="inicio">
+            <a href="#productos">
+                <img src="imagenes/banner-tienda.webp" alt="Visita nuestra tienda de plantas exóticas">
+            </a>
         </section>
 
+        <!-- Bienvenida -->
+        <section class="bienvenida">
+            <h2>Bienvenidos a Plantas Urbano</h2>
+            <p>Somos un vivero especializado en plantas exóticas, tropicales y variegadas, difíciles de conseguir y
+                perfectas para coleccionistas y amantes de lo único. Nuestra pasión es llenar tu espacio de vida y
+                naturaleza extraordinaria.</p>
+        </section>
+
+        <!-- Productos -->
         <section id="productos" class="productos">
             <h2>Nuestros Productos</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Planta 1">
-                    <h3>Planta 1</h3>
-                    <p>Descripción breve de la planta.</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Planta 2">
-                    <h3>Planta 2</h3>
-                    <p>Descripción breve de la planta.</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Planta 3">
-                    <h3>Planta 3</h3>
-                    <p>Descripción breve de la planta.</p>
-                </div>
+            <div class="card">
+                <img src="imagenes/planta1.jpg" alt="Alocasia Jacklyn aureo variegata">
+                <h3>Alocasia Jacklyn aureo variegata </h3>
+                <p>Ideal para interiores.<br><strong>$120000</strong></p>
+            </div>
+            <div class="card">
+                <img src="imagenes/planta2.jpg" alt="Philodendron Pink Princess">
+                <h3>Philodendron Pink Princess</h3>
+                <p>Fácil de cuidar.<br><strong>$25000</strong></p>
+            </div>
+            <div class="card">
+                <img src="imagenes/planta3.jpg" alt="Monstera Adansonii variegata">
+                <h3>Monstera Adansonii variegata</h3>
+                <p>Con aroma natural.<br><strong>$150000</strong></p>
             </div>
         </section>
 
+        <!-- Reseñas -->
         <section id="reseñas" class="reseñas">
             <h2>Reseñas de nuestros clientes</h2>
             <div class="grid-reseñas">
                 <div class="reseña">
                     <p>"Excelente calidad y atención."</p>
-                    <strong>- Cliente A</strong>
+                    <strong>- Maria Carey</strong>
                 </div>
                 <div class="reseña">
                     <p>"Gran variedad de plantas, muy recomendados."</p>
-                    <strong>- Cliente B</strong>
+                    <strong>- Robert De Niro</strong>
                 </div>
                 <div class="reseña">
                     <p>"Mis plantas llegaron en perfecto estado."</p>
-                    <strong>- Cliente C</strong>
+                    <strong>- Angelina Jolie</strong>
                 </div>
             </div>
         </section>
 
+        <!-- Video -->
+        <section id="video" class="video">
+            <h2>Conocé más sobre nuestro vivero</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_YD4dl2w1-o?si=k2fWkCVV6dA8N5uT"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Contacto -->
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <form action="https://formspree.io/f/xldbvaon" method="POST">
@@ -84,7 +108,30 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Plantas Urbano. Todos los derechos reservados.</p>
+        <div class="footer-contenido">
+            <div class="footer-mapa">
+                <h4>Encontranos</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.073793559678!2d-58.42491282508236!3d-34.60229545742158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63855d9f8f%3A0x79e05c88d1ff4521!2sFrancisco%20Acu%C3%B1a%20de%20Figueroa%20749%2C%20C1180AAM%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748107864189!5m2!1ses!2sar"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-redes">
+                <h4>Seguinos</h4>
+                <div class="iconos-redes">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            © 2025 Plantas Urbano. Todos los derechos reservados.
+        </div>
     </footer>
+
 </body>
+
 </html>
