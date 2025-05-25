@@ -1,6 +1,6 @@
-# Vivero Plantas Urbano
+# Plantas Urbano
 
-Este sitio web es un proyecto educativo para representar un vivero ficticio llamado "Vivero Verde Vida".
+Este sitio web es un proyecto educativo para representar un vivero ficticio llamado "Plantas Urbano ".
 
 Incluye:
 - Estructura semántica completa.
